@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Canvas 3: Le retour du comeback of doom de la grosse dead morteoi</title>
+  </head>
+  <body>
+    <canvas id="Canvas1" width="600" height="600"></canvas>
+
+    <script type="text/javascript">
+    var c = document.getElementById("Canvas1");
+    var ctx = c.getContext("2d");
+
+    ctx.beginPath();
+    ctx.moveTo(50,250);
+    ctx.lineTo(60,290);
+    ctx.lineTo(70,290);
+    ctx.lineTo(450,290);
+    ctx.lineTo(460,250);
+    ctx.lineTo(400,250);
+    ctx.lineTo(390,170);
+    ctx.lineTo(160,170);
+    ctx.lineTo(130,250);
+    ctx.lineTo(50,250);
+    ctx.fillStyle = "#00b251";
+    ctx.strokeStyle = "#000000";
+    ctx.fill();
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.fillStyle="#cdcdcd";
+    ctx.strokeStyle = "#000000";
+    ctx.arc(130,290,30,0,Math.PI*2,false);
+    ctx.fill();
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.arc(390,290,30,0,Math.PI*2,false);
+    ctx.fill();
+    ctx.stroke();
+
+    </script>
+  </body>
+</html>
